@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const Footer: React.FC = () => {
@@ -9,10 +8,10 @@ const Footer: React.FC = () => {
           <div className="md:col-span-2">
             <div className="flex items-center gap-2 mb-6">
               <div className="w-10 h-10 bg-emerald-500 rounded-lg flex items-center justify-center text-white font-bold text-xl">
-                S
+                C
               </div>
               <span className="font-bold text-2xl">
-                Saúde <span className="text-emerald-500">Centro Médico</span>
+                Chimúco <span className="text-emerald-500">Centro Médico</span>
               </span>
             </div>
             <p className="text-slate-400 text-lg mb-8 max-w-md">
@@ -49,7 +48,7 @@ const Footer: React.FC = () => {
         </div>
         
         <div className="pt-10 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center gap-6 text-slate-500 text-sm">
-          <p>© {new Date().getFullYear()} Centro Médico Clínico Saúde. Todos os direitos reservados.</p>
+          <p>© {new Date().getFullYear()} Centro Médico Chimúco Saúde. Todos os direitos reservados.</p>
           <div className="flex gap-8">
             <span className="hover:text-white cursor-pointer transition-colors">Privacidade</span>
             <span className="hover:text-white cursor-pointer transition-colors">Termos de Uso</span>

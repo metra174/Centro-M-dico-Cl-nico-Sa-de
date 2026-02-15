@@ -1,20 +1,16 @@
-
 import React from 'react';
-import ReactDOM from 'react-dom/client';
+import { createRoot } from 'react-dom/client';
 import App from './App.tsx';
 
-try {
-  const rootElement = document.getElementById('root');
-  if (!rootElement) {
-    throw new Error("Não foi possível encontrar o elemento root para montar a aplicação.");
-  }
+const rootElement = document.getElementById('root');
 
-  const root = ReactDOM.createRoot(rootElement);
-  root.render(
-    <React.StrictMode>
-      <App />
-    </React.StrictMode>
-  );
-} catch (error) {
-  console.error("Erro ao renderizar a aplicação:", error);
+if (!rootElement) {
+  throw new Error("Elemento root não encontrado.");
 }
+
+const root = createRoot(rootElement);
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);

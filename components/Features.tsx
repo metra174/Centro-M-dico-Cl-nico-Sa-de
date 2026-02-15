@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const FeatureItem: React.FC<{ title: string; desc: string; icon: React.ReactNode }> = ({ title, desc, icon }) => (
@@ -20,7 +19,7 @@ const Features: React.FC = () => {
         <div className="flex flex-col lg:flex-row items-center gap-16">
           <div className="lg:w-1/2">
             <h2 className="text-emerald-500 font-bold tracking-widest uppercase text-sm mb-3">Excelência em Viana</h2>
-            <h3 className="text-4xl font-extrabold text-blue-900 mb-8 leading-tight">Por que escolher o Centro Médico Clínico Saúde?</h3>
+            <h3 className="text-4xl font-extrabold text-blue-900 mb-8 leading-tight">Por que escolher o Centro Médico Chimúco Saúde?</h3>
             <p className="text-slate-600 text-lg mb-12">
               Estamos comprometidos com a saúde da nossa comunidade, oferecendo um ambiente seguro e profissionais que realmente se importam com você.
             </p>

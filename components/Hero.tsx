@@ -1,56 +1,71 @@
-
 import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="inicio" className="relative pt-32 pb-20 md:pt-48 md:pb-32 overflow-hidden">
-      {/* Background elements */}
-      <div className="absolute top-0 right-0 -z-10 w-1/2 h-full bg-blue-50 rounded-bl-[100px] md:rounded-bl-[200px]"></div>
-      <div className="absolute top-20 right-20 -z-10 w-64 h-64 bg-emerald-100 rounded-full blur-3xl opacity-50"></div>
+    <section id="inicio" className="relative pt-32 pb-16 md:pt-48 md:pb-32 overflow-hidden bg-white">
+      {/* Esferas de fundo para efeito de transparência e profundidade */}
+      <div className="absolute top-[-10%] left-[-5%] w-[500px] h-[500px] bg-blue-50 rounded-full blur-[120px] opacity-60"></div>
+      <div className="absolute bottom-[10%] right-[-5%] w-[400px] h-[400px] bg-emerald-50 rounded-full blur-[100px] opacity-50"></div>
       
-      <div className="container mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center">
+      <div className="container mx-auto px-4 md:px-8 flex flex-col md:flex-row items-center relative z-10">
         <div className="md:w-1/2 text-center md:text-left">
-          <h2 className="text-blue-900 font-bold tracking-wider uppercase text-sm mb-4">Bem-vindo ao</h2>
-          <h1 className="text-4xl md:text-6xl font-extrabold text-blue-900 leading-tight mb-6">
-            Centro Médico Clínico <span className="text-emerald-500">Saúde</span>
+          <div className="inline-flex items-center gap-2 bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-xs font-bold uppercase tracking-widest mb-6 border border-blue-100">
+            <span className="flex h-2 w-2 rounded-full bg-blue-600 animate-pulse"></span>
+            Viana - Mulenvos
+          </div>
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-extrabold text-slate-900 leading-[1.1] mb-6">
+            Centro Médico <br/>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-900 to-emerald-500">Chimúco Saúde</span>
           </h1>
-          <p className="text-xl text-emerald-600 font-medium mb-4 italic">Onde o cuidado encontra o bem-estar</p>
-          <p className="text-slate-600 text-lg mb-10 max-w-lg leading-relaxed">
-            Atendimento médico humanizado, com serviços completos para você e sua família, localizados no coração de Viana – Mulenvos.
+          <p className="text-xl text-blue-800 font-medium mb-6">
+            Excelência médica e cuidado humanizado.
+          </p>
+          <p className="text-slate-500 text-lg mb-10 max-w-lg leading-relaxed">
+            Oferecemos uma estrutura moderna e completa para cuidar da sua saúde e da sua família no coração de Viana. 
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a 
               href="https://wa.me/244950240554" 
-              className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-3 transition-all shadow-xl hover:shadow-emerald-200 transform hover:-translate-y-1"
+              className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 transition-all shadow-xl shadow-emerald-200/50 transform hover:-translate-y-1"
             >
               <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 1 1-7.6-11.7 8.38 8.38 0 0 1 3.8.9L21 3z"></path></svg>
-              Agendar WhatsApp
+              Agendar Consulta
             </a>
             <a 
               href="tel:+244921418585" 
-              className="bg-blue-900 hover:bg-blue-800 text-white px-8 py-4 rounded-full font-bold text-lg flex items-center justify-center gap-3 transition-all shadow-xl hover:shadow-blue-200 transform hover:-translate-y-1"
+              className="bg-white border-2 border-slate-200 text-slate-700 hover:border-blue-900 hover:text-blue-900 px-8 py-4 rounded-2xl font-bold text-lg flex items-center justify-center gap-3 transition-all transform hover:-translate-y-1 shadow-sm"
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
-              Ligar Agora
+              📞 Ligar Agora
             </a>
           </div>
         </div>
         
         <div className="md:w-1/2 mt-16 md:mt-0 relative flex justify-center md:justify-end">
-          <div className="relative z-10 w-full max-w-md">
-            <div className="absolute -top-4 -left-4 w-24 h-24 bg-emerald-500 rounded-2xl -z-10 animate-pulse"></div>
-            <img 
-              src="https://images.unsplash.com/photo-1559839734-2b71f1536783?auto=format&fit=crop&q=80&w=800" 
-              alt="Doutora Especialista" 
-              className="rounded-3xl shadow-2xl border-8 border-white object-cover aspect-[4/5]"
-            />
-            <div className="absolute -bottom-6 -right-6 bg-white p-6 rounded-2xl shadow-xl border border-slate-100 hidden sm:block">
-              <div className="flex items-center gap-4 mb-2">
-                <div className="w-3 h-3 bg-emerald-500 rounded-full"></div>
-                <span className="font-bold text-blue-900">Atendimento Ativo</span>
+          <div className="relative group">
+            {/* Moldura elegante e minimalista */}
+            <div className="absolute inset-0 bg-gradient-to-tr from-blue-100 to-emerald-100 rounded-[3rem] -rotate-2 scale-105 opacity-40 group-hover:rotate-0 transition-transform duration-500"></div>
+            
+            <div className="relative overflow-hidden rounded-[3rem] shadow-2xl bg-white border-4 border-white max-w-[320px] md:max-w-[400px] h-[400px] md:h-[500px]">
+              <img 
+                src="https://i.imgur.com/yKS6Qca.png" 
+                alt="Doutora Responsável" 
+                className="w-full h-full object-cover object-top scale-110" 
+                /* object-top e scale-110 garantem que foquemos no rosto e cortemos as pernas */
+              />
+            </div>
+
+            {/* Floating Info Card */}
+            <div className="absolute -bottom-6 -left-6 bg-white/90 backdrop-blur-md p-5 rounded-2xl shadow-xl border border-slate-100 hidden sm:block">
+              <div className="flex items-center gap-3">
+                <div className="p-2 bg-emerald-100 text-emerald-600 rounded-lg">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"></path></svg>
+                </div>
+                <div>
+                  <p className="text-[10px] text-slate-400 font-bold uppercase tracking-wider">Compromisso</p>
+                  <p className="text-sm font-bold text-blue-900">Atendimento 100% Seguro</p>
+                </div>
               </div>
-              <p className="text-slate-500 text-sm">Disponível para urgências 24h</p>
             </div>
           </div>
         </div>
