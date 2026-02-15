@@ -1,13 +1,13 @@
 
 import React from 'react';
-import Navbar from './components/Navbar';
-import Hero from './components/Hero';
-import Services from './components/Services';
-import Features from './components/Features';
-import AboutDoctor from './components/AboutDoctor';
-import Location from './components/Location';
-import Contact from './components/Contact';
-import Footer from './components/Footer';
+import Navbar from './components/Navbar.tsx';
+import Hero from './components/Hero.tsx';
+import Services from './components/Services.tsx';
+import Features from './components/Features.tsx';
+import AboutDoctor from './components/AboutDoctor.tsx';
+import Location from './components/Location.tsx';
+import Contact from './components/Contact.tsx';
+import Footer from './components/Footer.tsx';
 
 const App: React.FC = () => {
   return (
